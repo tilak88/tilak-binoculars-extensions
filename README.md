@@ -12,7 +12,7 @@ This repository separates the original Binoculars baseline from the extensions d
 - Checkpoint-friendly JSONL evaluation design for CNN-Falcon, CNN-Llama, PubMed, and HC3-style paired corpora.
 - Explicit negative-result reporting: weak or redundant signals are not promoted as improvements.
 
-The reported project result was 5,422 balanced examples across four datasets. The final presentation reports average AUROC of 0.966 for Binoculars, 0.940 for STC, and 0.709 for CMRD-var; the cumulative HC3 fusion result is 0.9873 to 0.9923. These figures are retained as project evidence, not as universal detector guarantees.
+The reported project result was 5,422 balanced examples across four datasets. The archived run ([`notebooks/bino_extension.ipynb`](notebooks/bino_extension.ipynb)) reports average AUROC of 0.976 for Binoculars, 0.940 for STC, and 0.709 for CMRD-var; the cumulative HC3 fusion result is 0.9873 to 0.9923. These figures are retained as project evidence, not as universal detector guarantees.
 
 ## Project notebook
 
