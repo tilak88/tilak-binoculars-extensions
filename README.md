@@ -14,6 +14,10 @@ This repository separates the original Binoculars baseline from the extensions d
 
 The reported project result was 5,422 balanced examples across four datasets. The final presentation reports average AUROC of 0.966 for Binoculars, 0.940 for STC, and 0.709 for CMRD-var; the cumulative HC3 fusion result is 0.9873 to 0.9923. These figures are retained as project evidence, not as universal detector guarantees.
 
+## Project notebook
+
+The original Kaggle run that produced these results is archived in [`notebooks/bino_extension.ipynb`](notebooks/bino_extension.ipynb) ("Orthogonal Binoculars — Optimised Single-Session Run", papermill, python3). It contains the full single-session evaluation across CNN-Falcon, CNN-Llama, PubMed, and HC3 (5,422 samples, 256-token cap), including feature-extraction, metric, and visualisation cells. The packaged `src/` and `scripts/` code in this repository is the cleaned, reusable form of the same implementation. The notebook references Kaggle dataset paths (`/kaggle/input/...`) and is provided for reproducibility evidence; the scripts are the supported entry point.
+
 ## Quick start
 
 ```powershell
@@ -34,6 +38,7 @@ python scripts/evaluate.py --input data/sample.jsonl --output results/features.c
 
 ```text
 src/binoculars_extension/  reusable feature and evaluation code
+notebooks/                 archived Kaggle project notebook (evidence run)
 scripts/                    command-line entry points
 tests/                      fast numerical tests
 docs/                       method and results notes
